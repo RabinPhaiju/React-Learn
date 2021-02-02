@@ -15,9 +15,9 @@ function App() {
         <Nav />
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path='/about' component={About} />
-          <Route path='/shop' component={Shop} />
-          <Route path='/Dijkstra' component={PathfindingVisualizer} />
+          <Route path='/about' exact component={About} />
+          <Route path='/shop' exact component={Shop} />
+          <Route path='/Dijkstra' exact component={PathfindingVisualizer} />
         </Switch>
       </div>
     </BrowserRouter>
