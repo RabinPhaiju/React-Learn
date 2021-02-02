@@ -10,13 +10,13 @@ const Nav = () => {
     <nav>
       <h3>Logo</h3>
       <div className='nav'>
-        <Link to='/about' style={navStyle}>
+        <Link to='/React-Learn/about' style={navStyle}>
           <div className='nav-item'>about</div>
         </Link>
-        <Link to='/shop' style={navStyle}>
+        <Link to='/React-Learn/shop' style={navStyle}>
           <div className='nav-item'>shop</div>
         </Link>
-        <Link to='/dijkstra' style={navStyle}>
+        <Link to='/React-Learn/dijkstra' style={navStyle}>
           <div className='nav-item'>Dijkstra</div>
         </Link>
       </div>

@@ -14,10 +14,10 @@ function App() {
       <div className='App'>
         <Nav />
         <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/about' exact component={About} />
-          <Route path='/shop' exact component={Shop} />
-          <Route path='/Dijkstra' exact component={PathfindingVisualizer} />
+          <Route path='/React-Learn' exact component={Home} />
+          <Route path='/React-Learn/about' exact component={About} />
+          <Route path='/React-Learn/shop' exact component={Shop} />
+          <Route path='/React-Learn/Dijkstra' exact component={PathfindingVisualizer} />
         </Switch>
       </div>
     </BrowserRouter>
