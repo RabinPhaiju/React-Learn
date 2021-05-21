@@ -1,12 +1,13 @@
-import React from "react";
-import "./App.css";
-import Nav from "./Components/Nav";
-import About from "./Pages/About";
-import Shop from "./Pages/Shop";
-import Home from "./Pages/Home";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import React from "react";
+import Nav from "./components/Nav";
+import About from "./components/pages/About";
+import Shop from "./components/pages/Shop";
+import Home from "./components/pages/Home";
 
-import PathfindingVisualizer from "./PathfindingVisualizer/PathfindingVisualizer";
+import TaskTracker from "./components/pages/TaskTracker";
+
+import PathfindingVisualizer from "./components/pathfindingVisualizer/PathfindingVisualizer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/React-Learn' exact component={Home} />
           <Route path='/React-Learn/about' exact component={About} />
           <Route path='/React-Learn/shop' exact component={Shop} />
+          <Route path='/React-Learn/taskTracker' exact component={TaskTracker} />
           <Route path='/React-Learn/Dijkstra' exact component={PathfindingVisualizer} />
         </Switch>
       </div>

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import Node from "./Node/Node";
-import { dijkstra, getNodesInShortestPathOrder } from "../algorithms/dijkstra";
+import Node from "./node/Node";
+import { dijkstra, getNodesInShortestPathOrder } from "./algorithms/dijkstra";
 
 import "./PathfindingVisualizer.css";
 
@@ -105,7 +105,7 @@ const getInitialGrid = () => {
     const currentRow = [];
     for (let col = 0; col < 50; col++) {
       currentRow.push(createNode(col, row));
-      console.log(currentRow);
+      // console.log(currentRow);
     }
     grid.push(currentRow);
   }
