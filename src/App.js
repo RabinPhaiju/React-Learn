@@ -8,6 +8,7 @@ import Home from "./components/pages/Home";
 import TaskTracker from "./components/pages/TaskTracker";
 
 import PathfindingVisualizer from "./components/pathfindingVisualizer/PathfindingVisualizer";
+import StyleComponent from "./components/pages/StyleComponent";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/React-Learn' exact component={Home} />
           <Route path='/React-Learn/about' exact component={About} />
           <Route path='/React-Learn/shop' exact component={Shop} />
+          <Route path='/React-Learn/stylecomponents' exact component={StyleComponent} />
           <Route path='/React-Learn/taskTracker' exact component={TaskTracker} />
           <Route path='/React-Learn/Dijkstra' exact component={PathfindingVisualizer} />
         </Switch>
