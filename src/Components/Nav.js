@@ -8,7 +8,7 @@ const Nav = () => {
   };
   return (
     <nav>
-      <Link to='/' style={navStyle}>
+      <Link to='/React-Learn/' style={navStyle}>
         <h3>Logo</h3>
       </Link>
 
