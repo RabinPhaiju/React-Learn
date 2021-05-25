@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "../../UI";
 import styled from "styled-components/macro";
 import notfound from "./404.gif";
+import spinner from "./spinner.gif";
 
 const NotButton = styled.div`
   display: flex;
@@ -28,6 +29,7 @@ const NotText = styled.div`
 const NotFound = () => {
   return (
     <NotButton>
+      <img src={spinner} alt='spinner' height='160px' />
       <img src={notfound} alt='Not Found' />
       <NotText>
         <h1>Look like you're lost.</h1>
