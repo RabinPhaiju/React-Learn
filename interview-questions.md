@@ -39,10 +39,26 @@
     - Can integrate with angular and other framework easily.
     - High redability (JSX)
 
+# What is the use of react-dom package
+
+    - It provides dom specific methods that can be used at top level.
+    - eg: render(), unmountComponentAtNode(), findDOMNode(), createPortal()
+    - render():
+        - Used to render a React element in dom.
+        - if the react element was already rendered, it will be updated ad only mutate dom as necessary to reflect the changes.
+
 # Component-based
 
     - components are foundation of react
     - re-usable component and independent.
+    - Component is a function that returns a react element.
+    - Functional component
+    - Class component
+
+# Fragment
+
+    - group list of children without adding extra node to the DOM.
+    - Fragment are bit faster that div.
 
 # Render
 
@@ -56,7 +72,10 @@
 
     - custom component that wraps another compnents.
     - takes a component as a parameter and returns a component.
-    - manipulation of props, state manipulation, code reuse
+    - manipulation of props, state manipulation, code reuse, render hijacking, props manipulation, etc.
+    - render Hijacking:
+        - The concept of render hijacking is the ability to control what a component will output from another component.
+        - It actually means that you decorate your component by wrapping it into a Higher-Order component. By wrapping you can inject additionalprops or make other changes, which can cause changing logic of rendering.
 
 # Redux
 
@@ -67,6 +86,7 @@
 
 # Props
 
+    - js objects.
     - short for properties
     - read-only
     - pure or immutable, cannot change props in reveiving component.
@@ -86,6 +106,12 @@
     - any action on DOM.
     - perform set activities as a response to triggers.
 
+# Synthetic Event
+
+    - cross browser event.
+    - its api is same as the browser event.
+    - eg: preventDefault()
+
 # Routing
 
     - single page application.
@@ -98,6 +124,7 @@
 # Ref
 
     - used to store reference to a single react element/component.
+    - direct access to DOM element.
 
 # Router
 
@@ -106,8 +133,9 @@
 # Pure component
 
     - to replace component having only render function
-    - that component which do not re-render.
+    - that component which do not re-render often.
     - to ensure performance.
+    - When props or state changes, purecomponent will do a shallow comparison to see if the component needs to be updated.
 
 # avoid binding
 
@@ -121,6 +149,8 @@
 # predefined prop types
 
     - string,number,bool,function,node
+    - array,object,element,symbol
+    - in dev mode, react will check the type of props and throw error if it does not match.
 
 # Hooks
 
@@ -133,12 +163,15 @@
 
 # setState
 
+    - asynchronous
+    - state of a component is an object.that holds information that may change over lifecycle of a component.
     - first argument: updater or variable
     - second argument: optional callback function
 
 # Context api
 
     - to effectively produce global variables that can be passed around components.
+    - a way to pass data through component tree without having to explicitly pass props down manually to every component.
 
 # Controlled Components
 
@@ -164,6 +197,16 @@
 # multiple component in same file.
 
 # Dumb components are stateless functional components.
+
+# Is it possible to use React without rendering elelemts? --> yes return null or false
+
+# How to define constansts in Reacts
+
+    - using es7 static field
+
+# Why shoud we not update state directly?
+
+    - it wont re-render the component.
 
 # pass data from child to parent
 
