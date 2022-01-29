@@ -1,11 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 
 const Nav = () => {
   const navStyle = {
     color: "white",
     textDecoration: "none",
-  };
+  }
   return (
     <nav>
       <Link to='/React-Learn/' style={navStyle}>
@@ -15,6 +15,9 @@ const Nav = () => {
       <div className='nav'>
         <Link to='/React-Learn/about' style={navStyle}>
           <div className='nav-item'>about</div>
+        </Link>
+        <Link to='/React-Learn/reactdnd' style={navStyle}>
+          <div className='nav-item'>React DND</div>
         </Link>
         <Link to='/React-Learn/shop' style={navStyle}>
           <div className='nav-item'>shop</div>
@@ -30,7 +33,7 @@ const Nav = () => {
         </Link>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Nav;
+export default Nav

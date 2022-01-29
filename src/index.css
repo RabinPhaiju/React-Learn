@@ -165,3 +165,22 @@ nav{
     transform: rotate(360deg);
   }
 }
+.board{
+  width: 100px;
+  height: 100px;
+  /* background-color: red; */
+  color: wheat;
+  margin: 2px;
+}
+.main-board{
+  display: flex;
+}
+.board1,.board2{
+  display: flex;
+  flex-wrap: wrap;
+  width: 220px;
+  height: 420px;
+  padding: 2px;
+margin: 2px;
+ border:2px solid black;
+}
