@@ -31,6 +31,9 @@ const Nav = () => {
         <Link to='/React-Learn/dijkstra' style={navStyle}>
           <div className='nav-item'>Dijkstra</div>
         </Link>
+        <Link to='/React-Learn/react-responsive' style={navStyle}>
+          <div className='nav-item'>React-Responsive</div>
+        </Link>
       </div>
     </nav>
   )

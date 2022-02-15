@@ -13,6 +13,8 @@ import StyleComponent from "./components/pages/StyleComponent"
 import NotFound from "./components/pages/notfound/NotFound"
 import LocalStorage from "./components/customHook/useLocalStorage/LocalStorage"
 import FetchData from "./components/customHook/useFetch/FetchData"
+import ReactResponsive from "./components/pages/react_responsive/ReactResponsive"
+import MediaQuery from "./components/customHook/useMediaQuery/MediaQuery"
 
 function App() {
   return (
@@ -27,9 +29,11 @@ function App() {
           <Route path='/React-Learn/stylecomponents' exact component={StyleComponent} />
           <Route path='/React-Learn/taskTracker' exact component={TaskTracker} />
           <Route path='/React-Learn/Dijkstra' exact component={PathfindingVisualizer} />
+          <Route path='/React-Learn/react-responsive' exact component={ReactResponsive} />
 
           <Route path='/React-Learn/customHook/useLocalStorage' exact component={LocalStorage} />
           <Route path='/React-Learn/customHook/useFetch' exact component={FetchData} />
+          <Route path='/React-Learn/customHook/useMediaQuery' exact component={MediaQuery} />
           <Route component={NotFound} />
         </Switch>
       </div>
