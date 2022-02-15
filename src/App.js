@@ -12,6 +12,7 @@ import PathfindingVisualizer from "./components/pathfindingVisualizer/Pathfindin
 import StyleComponent from "./components/pages/StyleComponent"
 import NotFound from "./components/pages/notfound/NotFound"
 import LocalStorage from "./components/customHook/useLocalStorage/LocalStorage"
+import FetchData from "./components/customHook/useFetch/FetchData"
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path='/React-Learn/Dijkstra' exact component={PathfindingVisualizer} />
 
           <Route path='/React-Learn/customHook/useLocalStorage' exact component={LocalStorage} />
+          <Route path='/React-Learn/customHook/useFetch' exact component={FetchData} />
           <Route component={NotFound} />
         </Switch>
       </div>

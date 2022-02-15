@@ -11,6 +11,9 @@ const CustomHook = () => {
       <div className='nav'>
         <Link to='/React-Learn/customHook/useLocalStorage' style={navStyle}>
           <div className='nav-item'>useLocalStorage</div>
+        </Link>{" "}
+        <Link to='/React-Learn/customHook/useFetch' style={navStyle}>
+          <div className='nav-item'>useFetch</div>
         </Link>
       </div>
     </nav>

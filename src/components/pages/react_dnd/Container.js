@@ -14,8 +14,8 @@ function Container({ bgColor, id }) {
       ref={drag}
       id={id}
       className='board'
-      style={{ border: isDragging ? "4px solid green" : null }}
-      style={{ backgroundColor: bgColor }}
+      style={{ backgroundColor: bgColor, border: isDragging ? "4px solid green" : null }}
+      // style={{  }}
     ></div>
   )
 }
