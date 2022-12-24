@@ -17,7 +17,7 @@ const Nav = () => {
           <div className='nav-item'>about</div>
         </Link>
         <Link to='/React-Learn/customHook' style={navStyle}>
-          <div className='nav-item'>customhook</div>
+          <div className='nav-item'>customHook</div>
         </Link>
         <Link to='/React-Learn/stylecomponents' style={navStyle}>
           <div className='nav-item'>Style_Component</div>
