@@ -1,10 +1,9 @@
-import { BrowserRouter, Switch, Route } from "react-router-dom"
+import { Routes, Route,Link } from "react-router-dom"
 import React from "react"
 import Nav from "./components/Nav"
 import About from "./components/pages/About"
 import CustomHook from "./components/pages/CustomHook"
 import Home from "./components/pages/Home"
-import ReactDND from "./components/pages/react_dnd/ReactDND"
 
 import TaskTracker from "./components/pages/TaskTracker"
 
@@ -18,26 +17,22 @@ import MediaQuery from "./components/customHook/useMediaQuery/MediaQuery"
 
 function App() {
   return (
-    <BrowserRouter>
       <div className='App'>
         <Nav />
-        <Switch>
-          <Route path='/React-Learn/' exact component={Home} />
-          <Route path='/React-Learn/reactdnd' exact component={ReactDND} />
-          <Route path='/React-Learn/about' exact component={About} />
-          <Route path='/React-Learn/customhook' exact component={CustomHook} />
-          <Route path='/React-Learn/stylecomponents' exact component={StyleComponent} />
-          <Route path='/React-Learn/taskTracker' exact component={TaskTracker} />
-          <Route path='/React-Learn/Dijkstra' exact component={PathfindingVisualizer} />
-          <Route path='/React-Learn/react-responsive' exact component={ReactResponsive} />
-
-          <Route path='/React-Learn/customHook/useLocalStorage' exact component={LocalStorage} />
-          <Route path='/React-Learn/customHook/useFetch' exact component={FetchData} />
-          <Route path='/React-Learn/customHook/useMediaQuery' exact component={MediaQuery} />
-          <Route component={NotFound} />
-        </Switch>
+        <Routes>
+          <Route path='/React-Learn/' exact element={<Home/>} />
+          <Route path='/React-Learn/about' exact element={<About/>} />
+          <Route path='/React-Learn/customhook' exact element={<CustomHook/>} />
+          <Route path='/React-Learn/stylecomponents' exact element={<StyleComponent/>} />
+          <Route path='/React-Learn/taskTracker' exact element={<TaskTracker/>} />
+          <Route path='/React-Learn/Dijkstra' exact element={<PathfindingVisualizer/>} />
+          <Route path='/React-Learn/react-responsive' exact element={<ReactResponsive/>} />
+          <Route path='/React-Learn/customHook/useLocalStorage' exact element={<LocalStorage/>} />
+          <Route path='/React-Learn/customHook/useFetch' exact element={<FetchData/>} />
+          <Route path='/React-Learn/customHook/useMediaQuery' exact element={<MediaQuery/>} />
+          <Route element={<NotFound/>} />
+          </Routes>
       </div>
-    </BrowserRouter>
   )
 }
 
