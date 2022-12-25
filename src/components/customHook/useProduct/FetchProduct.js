@@ -7,7 +7,7 @@ function FetchProduct() {
     <div>
       <ul>
         {loading && <li>Loading...</li>}
-        {error && <li>Error: {error.message}</li>}
+        {error && !products && <li>Error: {error.message}</li>}
         {products && products.map((item) => <li key={item.id}>{item.title}</li>)}
       </ul>
     </div>

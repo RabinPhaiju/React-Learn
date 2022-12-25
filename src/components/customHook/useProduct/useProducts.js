@@ -6,11 +6,13 @@ const useProducts = () => {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
-  const fetchProducts = async ()=>{
+  const fetchProducts = async (controller)=>{
     try {
-      const res = await axios.get('https://fakestoreapi.com/products');
+      const res = await axios.get('https://fakestoreapi.com/products',
+      {signal:controller.signal});
       if(res && res.data){
         setProducts(res.data);
+        setError()
       }
     } catch(error){
       setError(error)
@@ -20,7 +22,13 @@ const useProducts = () => {
   }
 
   useEffect(()=>{
-    fetchProducts();
+    const controller = new AbortController()
+    fetchProducts(controller);
+
+    return () => {
+      controller.abort()
+    }
+
   },[])
 
 
