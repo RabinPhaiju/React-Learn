@@ -17,3 +17,5 @@
 5. Dont use useState in unmounted component.
     - If comp_A is fetching data from server and the component is unmounted but the server request changes the component.
     - Use new AbortController()'s signal to abort those request from the component in useEffect.
+
+6. React tries to combine all the diff state changes and make them all call before re-rendering the app.
