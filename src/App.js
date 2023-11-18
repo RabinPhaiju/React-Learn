@@ -18,6 +18,7 @@ import MediaQuery from "./components/customHook/useMediaQuery/MediaQuery"
 import FetchProduct from "./components/customHook/useProduct/FetchProduct"
 import HookTransition from "./components/hook/HookTransition"
 import Debouce from "./components/hook/Debounce"
+import ReactState from "./components/customHook/useReactState/ReactState"
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             <Route path='useFetch' exact element={<FetchData/>} />
             <Route path='useProducts' exact element={<FetchProduct/>} />
             <Route path='useMediaQuery' exact element={<MediaQuery/>} />
+            <Route path='useReactState' exact element={<ReactState/>} />
           </Route>
           <Route element={<NotFound/>} />
           </Routes>

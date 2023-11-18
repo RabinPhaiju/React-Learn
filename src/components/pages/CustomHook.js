@@ -22,6 +22,9 @@ const CustomHook = () => {
         <Link to='/React-Learn/customHook/useMediaQuery' style={navStyle}>
           <div className='nav-item'>useMediaQuery</div>
         </Link>
+        <Link to='/React-Learn/customHook/useReactState' style={navStyle}>
+          <div className='nav-item'>useReactState</div>
+        </Link>
       </div>
       </nav>
      <Outlet/>
